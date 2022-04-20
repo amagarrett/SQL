@@ -1,0 +1,20 @@
+CREATE TABLE mamas_cups (id INTEGER PRIMARY KEY, name TEXT, quanitity INTEGER, ounces INTEGER, color TEXT, orders INTEGER, price INTEGER);
+INSERT INTO mamas_cups VALUES (1, "Bubbles Cup", 4, 32, "Pink", 3, 12);
+INSERT INTO mamas_cups VALUES (2, "Floral Cup", 3, 16, "Multi-Color", 6, 10);
+INSERT INTO mamas_cups VALUES (3, "Princess Cup", 7, 12, "Yellow", 10, 6);
+INSERT INTO mamas_cups VALUES (4, "Spring_Time Cup", 5, 32, "Green", 2, 12);
+INSERT INTO mamas_cups VALUES (5, "Halloween Cup", 8, 16, "Black", 1, 10);
+INSERT INTO mamas_cups VALUES (6, "Holiday Cup", 27, 32, "Red and Green", 20, 20);
+INSERT INTO mamas_cups VALUES (7, "Bridal Cup", 8, 16, "Black and Yellow Glitter", 7, 25);
+INSERT INTO mamas_cups VALUES (8, "Bridesmaide Cup", 9, 16, "Teal and Pink Glitter", 9, 25);
+INSERT INTO mamas_cups VALUES (9, "Elephant Cup", 2, 12, "Baby Blue", 0, 10);
+INSERT INTO mamas_cups VALUES (10, "Cheetah Print", 15, 20, "Brown and Pink Glitter", 15, 15);
+INSERT INTO mamas_cups VALUES (11, "Rainbow Cup", 6, 12, "Rainbow", 2, 10);
+INSERT INTO mamas_cups VALUES (12, "Baseball Mom Cup", 12, 32, "Silver Glitter", 12, 30);
+INSERT INTO mamas_cups VALUES (13, "Tired Mom Cup", 15, 20, "Brown", 4, 20);
+INSERT INTO mamas_cups VALUES (14, "Boy Mom Cup", 10, 20, "Blue", 5, 20);
+INSERT INTO mamas_cups VALUES (15, "Girl Mom Cup", 4, 20, "Pink", 4, 20);
+
+SELECT price FROM mamas_cups ORDER BY price;
+SELECT SUM(orders), SUM(price) FROM mamas_cups;
+SELECT * FROM mamas_cups;
